@@ -59,9 +59,6 @@ void rbus_log_handler(
     ParodusPrint("threadId %d\n", threadId);
     const char* slevel = "";
 
-    if(level < RBUS_LOG_ERROR)
-        return;
-
     switch(level)
     {
 	    case RBUS_LOG_DEBUG:    slevel = "DEBUG";   break;
